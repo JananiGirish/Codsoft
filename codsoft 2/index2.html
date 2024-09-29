@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+
+    <title>RESTAURANT</title>
+    <link rel="stylesheet" href="style2.css">
+
+    <style>
+
+
+        /* CSS Styles */
+        html {
+    scroll-padding-top: 80px; 
+}
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+            color: #070303;
+            background-image: url('rest1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display:inline-block;
+            display:list-item;
+   
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            background: linear-gradient(135deg, #4a0d8f 0%, #75779d 100%);
+            padding: 1rem 0;
+            box-shadow: 0px 5px 23px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-menu ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-menu a {
+            color: #fff;
+            text-decoration: none;
+            padding: 1rem;
+            display: block;
+        }
+
+        .nav-menu a:hover {
+            color: #38359d;
+            text-align: center;
+        }
+
+       
+        .background-image h1 {
+            font-size: 60px;
+            margin-bottom: 1.5rem;
+        }
+
+        .background-image p {
+            font-size: 12px;
+            color: #ffb8f6;
+        }
+
+        .container {
+            padding: 80px 20px;
+        }
+
+        .section {
+            margin-bottom: 60px;
+        }
+
+        .section-header {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #750cee;
+        }
+
+        .columns {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .column {
+            flex: 1;
+            margin: 0 10px;
+        }
+
+        .column h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #060204;
+        }
+
+        .column p {
+            font-size: 16px;
+        }
+
+        .events {
+            background: #060606;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .event-item {
+            margin-bottom: 20px;
+        }
+
+        .event-item h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #faf6fb;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer-content p {
+            margin-bottom: 10px;
+        }
+
+        .social-icons a {
+            color: #330b49;
+            margin: 0 0.5rem;
+            text-decoration: none;
+            font-size: 24px;
+        }
+
+        .social-icons a:hover {
+            color: #e38cb7;
+        }
+
+        /* Custom Styles for the Text Section */
+        .text-section {
+            background-color: #e6ddf0; /* Background color used in the previous page */
+            color: #2386a1;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .text-section h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .text-section p {
+            font-size: 100px;
+            margin: 10px 0;
+        }
+        #hero {
+            background: linear-gradient(135deg, rgba(60, 8, 118, 0.8) 0%, rgba(68, 114, 123, 0.8) 100%);
+            color: #99a3bd;
+            text-align: center;
+            padding: 100px 0;
+            margin-top: 60px; /* Offset for fixed header */
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            margin-bottom: 1.5rem;
+            
+        }
+
+        .hero p {
+            font-size: 23px;
+            color: #1b1019;
+            font-style: bold;
+        }
+        /* Existing styles */
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Adds space between cards */
+}
+
+.column {
+    flex: 1;
+    background: #d4d8d8; /* White background for cards */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    padding: 30px;
+    text-align: center; /* Center align text */
+    
+    transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+}
+
+.column h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #030809; /* Color for service title */
+}
+
+.column p {
+    font-size: 16px;
+    color: #161fa5; /* Darker color for description text */
+}
+
+.column:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+        #about {
+    background: #f4f2f5; /* Light background for better contrast */
+    padding: 40px 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+    text-decoration-color: #04062b;
+}
+
+.section-header {
+    font-size: 28px;
+    color: #10c9f3; /* Color for section header */
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 18px;
+    color: #18091e; /* Dark grey text for better readability */
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-details h2 {
+    font-size: 22px;
+    color: #200d23; /* Color for section titles */
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.about-details p {
+    font-size: 16px;
+    color: #1c0a23; /* Darker color for body text */
+    margin-bottom: 20px;
+}
+/* Upcoming Events Section */
+#events {
+    background: #e2dae6;
+    padding: 40px 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.section-header {
+    font-size: 28px;
+    color: #2c38b9; /* Color for section header */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.event-item {
+    background: #f9f9f9; /* Slightly different background for event items */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.event-item h3 {
+    font-size: 22px;
+    color: #04062b; /* Color for event titles */
+    margin-bottom: 10px;
+}
+
+.event-item p {
+    font-size: 16px;
+    color: #555; /* Dark grey text for better readability */
+}
+
+/* Footer */
+footer {
+    background: #333; /* Dark background for footer */
+    color: #fff; /* White text */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content p {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.social-icons a {
+    color: #fff; /* White icons */
+    margin: 0 10px;
+    font-size: 24px; /* Icon size */
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #140453; /* Hover color for icons */
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav-menu">
+            <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT US</a></li>
+            <li><a href="#menu">MENU</a></li>
+            <li><a href="#events">EVENTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+        </nav>
+    </header>
+
+
+    <div id="hero" class="hero">
+        <h1>Welcome to Ava's Eco-cafe</h1>
+        <p style="text-align: center"><b>
+            Welcome to Ava's Eco-Cafe, a cozy and sustainable haven in the heart of the city.
+            Our mission is to serve not only delicious coffee and treats, but also to promote a greener future for our community.
+            We source our coffee beans from fair-trade, organic farms and use compostable cups and lids.
+            We also partner with local suppliers to reduce transportation emissions and support the local community.
+            <br>
+            Our menu features a variety of specialty coffee drinks made with locally-roasted beans,
+            as well as delicious sandwiches, salads, and pastries baked fresh in-house.
+            From vegan muffins to artisanal croissants, we've got something for every taste and dietary preference.
+            <br>
+            Step into our cozy cafe and you'll be surrounded by natural light,
+            reclaimed wood accents, and vintage planters filled with lush greenery.
+            Our comfortable seating areas invite you to linger over a cup of coffee or meet with friends for a relaxed meal.
+          </b></p>
+    </div>
+
+    <div class="container">
+        <div id="menu" class="section">
+            <div class="section-header" ><B>MENU</B></div>
+            <div class="columns">
+                <div class="column">
+                    <h2>Apetizers</h2>
+                    <p style="text-align: left;">
+                      <b>
+                        Vegetable Samosas (4 pieces) - ₹120 <br><br>
+                        Chicken Tikka (4 pieces) - ₹150 <br><br>
+                        Paneer Tikka (4 pieces) - ₹150 <br><br>
+                        Rajasthani Papad (4 pieces) - ₹80 <br><br>
+                        Fresh Fruit Chaat (seasonal fruits) - ₹80 <br><br> </b></p>
+                </div>
+                <div class="column">
+                    <h2>Main Course</h2>
+                    <p style="text-align: left" text-size="60px">
+                     <b> 
+                        Chicken Biryani (full plate) - ₹220 <br><br>
+                        Vegetable Biryani (full plate) - ₹180 <br><br>
+                        Chicken Tikka Masala (with rice and naan) - ₹280 <br><br>
+                        Palak Paneer (with rice and naan) - ₹250 <br><br>
+                        Chana Masala (with rice and naan) - ₹220 <br><br>
+                        Dal Makhani (with rice and naan) - ₹220 <br><br></b></p>
+                </div>
+                <div class="column">
+                    
+                    <h2><span class="red-background">Beverages</h2></span>
+                    <p style="text-align: left;">
+                    <b>
+                        Soft drinks (Coca-Cola, Pepsi)- ₹20-₹30 <br><br>
+                        Juice (orange, mango) - ₹40-₹60 <br><br>
+                        Coffee or Tea - ₹20-₹30 <br><br>
+                        Beer (Kingfisher) - ₹60-₹80 <br><br>
+                        Wine (White, Red, etc) - ₹100-₹150 <br><br></b></p>
+                </div>
+            </div>
+        </div>
+
+       <div id="about" class="section">
+    <div class="section-header"><B>ABOUT US</B></div>
+    
+    <div class="about">
+        <h2>Our Story</h2>
+            <p>Our founder, Ava Morales, saw an opportunity to combine her love of sustainability and good coffee. After years of working in the coffee industry, Ava realized that many cafes were neglecting their environmental impact. She decided to take a stand and create a cafe that would not only serve high-quality coffee, but also prioritize sustainability and eco-friendliness.</p>
+        <h2>Our Vision</h2>
+        <p>Our vision for the future: to be the world’s most loved coffee brand. Whether it’s through our stores, our Express machines, or the beans we sell, we have big growth plans. </p>
+        <h2>Our Mission</h2>
+        <p> 
+            At Ava's Eco-Cafe, we're committed to reducing waste and promoting eco-friendly practices. We're passionate about creating a space where our customers can enjoy their favorite coffee drinks while also supporting a sustainable future.</p>
+        <h2>Events</h2>
+        <p>
+            Join us for yoga classes, art exhibits, and other events focused on sustainability and wellness. We're committed to creating a space that inspires and educates our community.</p>
+    </div>
+</div>
+
+
+       <div id="events" class="section events">
+    <div class="section-header"><B>UPCOMING EVENTS</B>
+    </div>
+    <div class="event-item">
+        <ul class="events-list">
+            <li>
+              <h3>Wine and Cheese Pairing Night</h3>
+              <p>March 12th, 6:00pm - 8:00pm</p>
+              <p>Join us for a wine and cheese pairing night featuring some of our favorite wines and artisanal cheeses.</p>
+              <a href="mailto:events@restaurant.com" class="btn">RSVP</a>
+            </li>
+    </div>
+    <div class="event-item">
+        <ul class="events-list">
+
+         <li>
+        <h3>Live Music Night</h3>
+      <p>March 19th, 8:00pm - 10:00pm</p>
+      <p>Enjoy live music by local musician, John Smith, while you dine on our delicious menu items.</p>
+      </li>
+    </div>
+</div>
+
+    </div>
+
+    <footer>
+    <div id="contact" class="footer-content">
+        <p>Connect with us:</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+              <p>contact no:9876443223</p>
+            <p>email: janani899@gmail.com</p>
+        </div>
+    </div>
+</footer>
+
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
